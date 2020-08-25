@@ -2,9 +2,8 @@
   "name": "mmobx-data",
   "version": "1.0.0",
   "description": "Set of AWS lambda's to manage MMOBX site data.  One to convert csv S3 files to json S3 files.  And, then another to query the JSON data for the website.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "csvToJSON": "node src/csvToJSON.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +16,11 @@
   },
   "homepage": "https://github.com/MasterWorksHappy/mmobx-data#readme",
   "dependencies": {
+    "aws-sdk": "^2.739.0",
     "csvtojson": "^2.0.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "prettier": "2.1.0"
   }
 }
